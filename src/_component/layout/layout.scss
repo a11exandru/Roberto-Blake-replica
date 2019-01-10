@@ -9,6 +9,11 @@
 
 //- iar de aici incepe distractia
 
-p {
-    color: red;
+html {
+    //reset the font size to 10 px
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
