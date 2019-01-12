@@ -19,5 +19,24 @@ body {
 }
 
 .content {
-    margin-top: 5.2rem;
+    padding-top: 5.2rem;
+}
+
+.header__wrapper {
+    background-color: $color-pizazz;
+
+    h1 {
+        color: $color-white;
+        font-size: 3.6rem;
+        text-align: center;
+        font-weight: normal;
+        padding: 1rem 1.5rem;
+    }
+}
+
+.header__body {
+    background-image: url("asset/image/robertoblake2016header.jpg");
+    height: 61.1rem;
+    background-position: center;
+    background-size: cover;
 }

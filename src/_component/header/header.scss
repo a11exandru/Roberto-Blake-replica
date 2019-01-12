@@ -9,8 +9,11 @@
     justify-content: space-between;
     align-items: center;
     border-bottom: 0.1rem solid $color-mercury;
-    position: relative;
     background-color: $color-mine-shaft;
+    position: fixed;
+    left: 0;
+    right:0;
+    top: 0;
 }
 
 .header__name {
@@ -22,8 +25,11 @@
 }
 
 .rbcf-menu {
-    font-size: 2.3rem;
-    padding: 1.5rem;
+    font-size: 2.4rem;
+    padding: 0.5rem;
+    margin: 0.8rem;
+    border: 0.1rem solid $color-white;
+    border-radius: 0.3rem;
     cursor: pointer;
 }
 
@@ -33,7 +39,7 @@
             font-family: 'roberto-blake-custom-font' !important;
             content: "\e902";
             font-size: 2rem;
-            padding-left: 2rem;
+            padding-left: 1.7rem;
         }
     }
     background-color: $color-mine-shaft;
@@ -60,7 +66,7 @@
     // display: none;
     transition: 0.25s;
     position: fixed;
-    top: 5.2rem;
+    top: -100%;
     left: 0;
     right: 0;
     border-bottom: 0.1rem solid $color-mercury;
@@ -73,7 +79,7 @@
 
 #toggle-top-menu:checked + .header__menu-list {
     display: block;
-    top: -100%;
+    top: 5.2rem;
 }
 
 .header__sub-menu {
