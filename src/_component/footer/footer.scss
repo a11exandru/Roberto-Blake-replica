@@ -1,3 +1,19 @@
 footer {
     text-align: center;
+    font-size: 1.5rem;
+    
+    .footer__link {
+        color: $color-astral;
+        font-size: 1.5rem;
+        text-decoration: none;
+    }
+
+    p {
+        margin-bottom: 0.8rem;
+    }
+
+    .footer__link:hover {
+        color: $color-bay-of-many;
+        text-decoration: underline;
+    }
 }
