@@ -1,6 +1,17 @@
 footer
     .footer__social
-        //- pre=JSON.stringify(data.footer, null, 2)
+        .footer__text
+            h2 Let's Connect
+            p Feel free to reach out to me!
+            p
+                a(href='tel:+1-518-406-8664') P: 518.406.8664
+            p
+                img(
+                    src="asset/image/roberto-blake-email.png",
+                    title="Let's have a quick chat",
+                    width="190",
+                    height="20",
+                )
         ul
             each social in data.footer
                 li.social__item
