@@ -69,13 +69,4 @@ footer {
     p {
         font-size: 1.5rem;
     }
-
-    a {
-        color: $color-astral;
-        text-decoration: none;
-
-        &:hover {
-            text-decoration: underline;
-        }
-    }
 }
