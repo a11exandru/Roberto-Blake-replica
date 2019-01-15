@@ -13,12 +13,15 @@
 }
 
 .youtube-video-16-by-9 {
+    margin: 2rem;
+    // get the percentage fot 16 by 9
     padding-top: 56.25%;
     position: relative;
-
+    
     iframe {
         position: absolute;
         top: 0;
         left: 0;
+        z-index: -1;
     }
 }
