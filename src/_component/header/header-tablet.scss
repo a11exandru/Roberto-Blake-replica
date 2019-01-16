@@ -1,0 +1,22 @@
+@media screen and (min-width: 768px) {
+    .header__menu-list {
+        display: flex;
+        z-index: 2;
+        top: 0.8rem;
+        right: 0.1rem;
+        left: inherit;
+        border: none;
+    }
+
+    .header__menu-item {
+        list-style-type: none;
+
+        &:first-child .header__menu-link {
+            padding-top: 0;
+        }
+    }
+
+    .rbcf-menu {
+        display: none;
+    }
+}
