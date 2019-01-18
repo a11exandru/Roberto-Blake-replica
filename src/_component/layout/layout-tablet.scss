@@ -2,9 +2,10 @@
     .image-text__wrapper {
         display: grid;
         grid-template-columns: 1fr 2fr;
+        padding-top: 2rem;
 
-    .image {
-        // flex-grow: 1;
+    img {
+        width: 70%;
     }
 
     .text-justify {

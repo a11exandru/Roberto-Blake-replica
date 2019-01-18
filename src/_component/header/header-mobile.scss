@@ -35,15 +35,15 @@
 }
 
 .header__menu-item {
+    background-color: $color-mine-shaft;
     &:first-child {
-        &:after {
+        & .header__menu-link:after {
             font-family: 'roberto-blake-custom-font' !important;
             content: "\e902";
             font-size: 2rem;
-            padding-left: 1.7rem;
         }
+        padding-top: 0.5rem;
     }
-    background-color: $color-mine-shaft;
 }
 
 .header__menu-link,
