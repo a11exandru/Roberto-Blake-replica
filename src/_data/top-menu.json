@@ -20,7 +20,7 @@
 
   {
 
-    "href": "/speaker",
+    "href": "/speaker.php",
 
     "text": "Speaking",
 
@@ -30,7 +30,7 @@
 
   {
 
-    "href": "/training",
+    "href": "/training.php",
 
     "text": "Consulting",
 

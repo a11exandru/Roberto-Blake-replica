@@ -7,6 +7,7 @@ block config
             description="This is the Roberto Blake new site"
 
 block content
+    include _component/mixin/link
     .header__wrapper
         h1 Entrepreneur, Author & Speaker
         .header__panel
@@ -25,16 +26,7 @@ block content
             | and 
             strong Marketing 
             | and has helped brands, both large and small achieve their goals and reach their audiences.
-        p His work has been recognized by 
-            //-Putem face asta si cu Mixins(cauta pe pug language)!!!! 
-            strong
-                a(href="http://www.forbes.com/sites/markfidelman/2016/09/06/20-must-watch-youtube-channels-that-will-change-your-business/") Forbes,
-                a(href="http://www.huffingtonpost.com/tayo-rockson/disrupting-creative-servi_b_9154918.html")  Huffington Post, 
-                a(href="https://blogs.adobe.com/creativecloud/tag/roberto-blake/") Adobe
-            normal and
-            strong 
-                a(href="http://www.photoshopcreative.co.uk/image/47806/feel_the_noise") Photoshop Creative Magazines
-                |  .
+        p His work has been recognized by #[+link ('http://www.forbes.com/sites/markfidelman/2016/09/06/20-must-watch-youtube-channels-that-will-change-your-business/', 'Forbes', 'Forbes' )], #[+link ('http://www.huffingtonpost.com/tayo-rockson/disrupting-creative-servi_b_9154918.html', 'Huffington Post', 'Huffington Post')], #[+link ('https://blogs.adobe.com/creativecloud/tag/roberto-blake/', 'Adobe', 'Adobe')] and #[+link ('http://www.photoshopcreative.co.uk/image/47806/feel_the_noise', 'Photoshop Creative Magazines', 'Photoshop Creative Magazines')] .
         p He is #[strong HOW DESIGN LIVE SPEAKER] and contributor to several  publications
 
         hr
