@@ -4,7 +4,7 @@
     border-radius: 0.5rem;
     text-decoration: none;
     color: $color-white;
-    margin: 0.5rem;
+    margin: 0.5rem 0;
     font-size: 2.3rem;
     font-weight: normal;
     text-transform: uppercase;
@@ -17,15 +17,36 @@
 .button__download {
     @extend %button;
     padding: 1rem 1.5rem;
+
+    &:hover {
+        text-decoration: none;
+    }
 }
 
 .button__download-small {
     @extend %button;
     font-size: 1.5rem;
-    padding: 0.5rem 0.5rem;
+    padding: 0.5rem;
     text-transform: normal;
 
     &:hover {
+        text-decoration: none;
+    }
+}
+
+.youtube__button {
+    border: 0.1rem solid $color-valencia;
+    background-color: $color-cornflower-blue;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: $color-white;
+    // margin: 0.7rem 0;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    font-weight: normal;
+    &:hover {
+        background-color: $color-persian-red;
+        border-color: $color-mexican-red;
         text-decoration: none;
     }
 }
