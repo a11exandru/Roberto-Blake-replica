@@ -16,6 +16,7 @@
     .content-press {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        margin: 0 5rem;
     }
 
     .side-bar {
@@ -38,6 +39,7 @@
         display: flex;
         justify-content: space-between;
     }
+
     .column {
         width: 50%;
         margin: 2rem;
