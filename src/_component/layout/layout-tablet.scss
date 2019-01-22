@@ -12,4 +12,34 @@
         padding: 0 2rem;
     }
     }
+
+    .content-press {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .side-bar {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        ul {
+            padding: 0 30rem;
+            p, a {
+                font-size: 1.6rem;
+            }
+        }
+
+    }
+
+    .content {
+        grid-column: 1/3;
+    }
+
+    .two-column {
+        display: flex;
+        justify-content: space-between;
+    }
+    .column {
+        width: 50%;
+        margin: 2rem;
+    }
 }
