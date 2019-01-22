@@ -53,7 +53,7 @@
     color: $color-white;
     font-size: 1.5rem;
     text-decoration: none;
-    padding: 0.75rem 1.5rem;
+    padding: 0.75rem 1.2rem;
     display: block;
 }
 
@@ -73,6 +73,7 @@
     left: 0;
     right: 0;
     border-bottom: 0.1rem solid $color-mercury;
+    z-index: 1;
 }
 
 #toggle-sub-menu,
@@ -131,6 +132,11 @@
 
 .header__body--consulting {
     background-image: url("/asset/image/robertoblake2016-marketing-header.jpg");
+    @extend %header__body
+}
+
+.header__body--press {
+    background-image: url("/asset/image/robertoblake2016-press-header-2.jpg");
     @extend %header__body
 }
 

@@ -27,6 +27,14 @@ html
         include ../featured/featured
         .footer
             include ../footer/footer
+        script.
+            let iframe = document.querySelector('iframe');
+            let handlerFunction = () => {
+                //- set the attribute valye to be the value of data-src
+                iframe.src = iframe.dataset.src;
+                document.removeEventListener('scroll', handlerFunction);
+            };
+            let scrollListener = document.addEventListener('scroll', handlerFunction);
 link(
     rel="stylesheet",
     href=`/style.css`
