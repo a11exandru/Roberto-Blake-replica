@@ -1,0 +1,41 @@
+doctype html
+html
+    -
+        var 
+            baseUrl= 'https://a11exandru.github.io/Roberto-Blake-replica';
+            //- baseUrl= 'localhost:3000';
+    block config
+    head
+        title=title
+        meta(name="description", content=description)
+        meta(name="robots", content="noindex")
+        meta(
+            name='viewport',
+            content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'
+            )
+        link(
+            rel="canonical",
+            href="http://robertoblake.com/"
+            )
+        if config.entry.css.embed
+            link(rel="stylesheet" href=`${embedPath}` inline)
+    body
+        include ../header/header
+        .content
+            block content
+        hr
+        include ../featured/featured
+        .footer
+            include ../footer/footer-inside-page
+        script.
+            let iframe = document.querySelector('iframe');
+            let handlerFunction = () => {
+                //- set the attribute valye to be the value of data-src
+                iframe.src = iframe.dataset.src;
+                document.removeEventListener('scroll', handlerFunction);
+            };
+            let scrollListener = document.addEventListener('scroll', handlerFunction);
+link(
+    rel="stylesheet",
+    href=`${baseUrl}/style.css`
+)

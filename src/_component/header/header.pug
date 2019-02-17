@@ -13,7 +13,10 @@ nav.header
                             li 
                                 a.dropdown__link(href=dropdown.href, target=dropdown.target)=dropdown.text
                 else
-                    a.header__menu-link(href=`${baseUrl}${item.href}`, target=item.target)=item.text
+                    if item.baseUrl == '0'
+                        a.header__menu-link(href=`${item.href}`, target=item.target)=item.text
+                        else 
+                            a.header__menu-link(href=`${baseUrl}${item.href}`, target=item.target)=item.text
     .header__top
         //- span.header__name Roberto Blake
         a.header__name(href=`${baseUrl}`) Roberto Blake
